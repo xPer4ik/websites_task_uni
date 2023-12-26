@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="h14.css">
+</head>
+<body>
+
+  <div id="container2">
+    <div id="floatingBox">Где я?</div>
+  </div>
+
+  <div id="contents">
+    <a class="l1" href="https://www.yandex.ru/images/search?from=tabbar&img_url=https%3A%2F%2Fsalexy.kz%2Fimages%2Fimg_kz%2F700%2F81%2F34%2F8134d5f42eb6f0c8ee0f9e10a89306a3.jpg&lr=10743&pos=3&rpt=simage&text=%D1%81%D1%82%D1%83%D0%BB%D1%8C">link</a>
+    <div class="l2">
+        <a href="https://www.yandex.ru/images/search?from=tabbar&img_url=https%3A%2F%2Fsalexy.kz%2Fimages%2Fimg_kz%2F700%2F81%2F34%2F8134d5f42eb6f0c8ee0f9e10a89306a3.jpg&lr=10743&pos=3&rpt=simage&text=%D1%81%D1%82%D1%83%D0%BB%D1%8C">
+            <i>link2</i>
+        </a>
+    </div>
+  </div>
+  <div id="images">
+    <div id="mainImgContainer">
+      <img id="mainImg" src="armchair3.jpg" alt="cat">
+    </div>
+    <div id="miniImgsContainer">
+      <img class="miniimg" onclick="changePic(0)" src="armchair3.jpg" alt="cat">
+      <img class="miniimg" onclick="changePic(1)" src="sofa2.jpg" alt="cat">
+      <img class="miniimg" onclick="changePic(2)" src="sofa3.jpg" alt="cat">
+      <img class="miniimg" onclick="changePic(3)" src="bed2.jpg" alt="cat">
+      <img class="miniimg" onclick="changePic(4)" src="bed3.jpg" alt="cat">
+      <img class="miniimg" onclick="changePic(5)" src="bed.jpg" alt="cat">
+    </div>
+  </div>
+
+  <ul id="selectableList">
+    <li>Копирование 1</li>
+    <li>Копирование 2</li>
+    <li>Копирование 3 </li>
+  </ul>
+
+  <div class="slider-container">
+    <div class="slider-bar" id="sliderBar">
+      <div class="slider" id="slider"></div>
+    </div>
+  </div>
+
+  <div class="products" id="products">
+    <div class="product" data-price="20" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">Картошка - 20</div>
+    <div class="product" data-price="30" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">Морковь - 30</div>
+  </div>
+
+  <div class="cart" id="cart" ondrop="drop(event)" ondragover="allowDrop(event)">
+    Список овощей
+    <div id="total-cost">Сумма  : 0</div>
+  </div>
+  <div id="ball"></div>
+
+  <script src="h14.js"></script>
+</body>
+</html>

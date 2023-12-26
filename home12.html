@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task_12</title>
+  <link rel="stylesheet" href="style.css">
+<body>
+
+  <div class="first">
+    <p class="namee">Список покупок:</p>
+    <ul id="itemList"></ul>
+    <div id="btns1">
+      <button onclick="addItem()">Добавить продукты</button>
+    </div>
+  </div>
+
+  <div id="notifContainer">
+    <img onclick="stopNotif()" src="bell.jpg" alt="bell">
+    <p id="notifCounter">0</p>
+
+    <div style="display: none;" class="notif">
+      <p>Уведомление</p>
+    </div>
+
+  </div>
+
+  <script src="home12.js"></script>
+</body>
+</html>

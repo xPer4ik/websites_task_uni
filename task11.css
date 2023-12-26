@@ -1,0 +1,21 @@
+ul li{
+  text-decoration: none;
+  list-style: none;
+}
+ul li::marker {
+  display: none;
+}
+ul {
+  list-style-type: none;
+  background-color: antiquewhite;
+}
+li{
+  list-style-type: none;
+  margin-top: 10px;
+}
+p{
+  background-color: rgb(193, 237, 238);
+}
+body{
+  text-align: center;
+}

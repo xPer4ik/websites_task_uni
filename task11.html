@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="task11.css">
+
+</head>
+<body>
+
+  <div class="sec">
+    <p class="namee">Список:</p>
+    <ul id="itemList"></ul>
+    <p id="totalCost">Итоговая стоимость: $0</p>
+    <div id="btns1">
+      <button onclick="addItem()">Добавить</button><br> 
+      <button onclick="removeItem()">Удалить</button><br>
+      <button onclick="clearCart()">Очистить все</button>
+    </div>
+  </div>
+
+  <div class="sec">
+    <p class="namee">Фильтровать по количеству</p>
+    <ul id="itemList_filtered"></ul>
+    <input oninput="filter()" id="inptNuma" type="text" placeholder="от">
+    <input oninput="filter()" id="inptNumb" type="text" placeholder="до">
+  </div>
+
+  <div class="sec">
+    <p class="namee">Сортировка</p>
+    <ul id="itemList_sorted"></ul>
+    <button onclick="changeSort()">Отсортировать</button>
+  </div>
+
+  <script src="task11.js"></script>
+</body>
+</html>

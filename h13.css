@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  background-size: 50%;
+  background-repeat: repeat;
+  overflow-x: hidden;
+}
+
+#centeredElement {
+  position: absolute; 
+}
+
+#centeredImage {
+  position: absolute;
+}
+#notification-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+}
+
+.notification {
+  background-color: #f8d7da;
+  color: #000000;
+  padding: 10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+#spaceshipContainer{
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  top: 0;
+}
+
+.arm{
+  position: absolute;
+  width: 100px;
+  pointer-events: none;
+  height: auto;
+}
+
+
+
+
+#mainContent{
+  z-index: 10;
+  position: absolute;
+  margin-top: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text{
+  color: white;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+.appearAnim{
+  animation: forwards appear 1s;
+}
+
+.disappearAnim{
+  animation: forwards disappear 1s;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes disappear{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
